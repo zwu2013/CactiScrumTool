@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='org.cacti.scrumtool.CactiScrumTool' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/CactiScrumTool/greet" class="org.cacti.scrumtool.server.GreetingServiceImpl" />
+
+</module>
