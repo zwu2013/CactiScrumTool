@@ -10,7 +10,6 @@
   <artifactId>cacti-scrumtool-webapp-1.0.0</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>GWT Maven Archetype</name>
 
   <properties>
     <!-- Convenience property to set the GWT version -->
@@ -113,4 +112,5 @@
     </plugins>
   </build>
 
+  <name>cacti-scrumtool-webapp-1.0.0</name>
 </project>
