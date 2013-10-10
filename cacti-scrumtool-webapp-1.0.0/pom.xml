@@ -52,11 +52,17 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-	  <groupId>org.apache.ibatis</groupId>
-	  <artifactId>ibatis-sqlmap</artifactId>
-	  <version>2.3.4.726</version>
-	</dependency>
-  </dependencies>
+		  <groupId>org.apache.ibatis</groupId>
+		  <artifactId>ibatis-sqlmap</artifactId>
+		  <version>2.3.4.726</version>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+            
+	</dependencies>
 
   <build>
     <!-- Generate compiled stuff in the folder used for developing mode -->
@@ -115,6 +121,39 @@
         </configuration>
       </plugin>
     </plugins>
+    <pluginManagement>
+    	<plugins>
+    		<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
+    		<plugin>
+    			<groupId>org.eclipse.m2e</groupId>
+    			<artifactId>lifecycle-mapping</artifactId>
+    			<version>1.0.0</version>
+    			<configuration>
+    				<lifecycleMappingMetadata>
+    					<pluginExecutions>
+    						<pluginExecution>
+    							<pluginExecutionFilter>
+    								<groupId>org.codehaus.mojo</groupId>
+    								<artifactId>
+    									gwt-maven-plugin
+    								</artifactId>
+    								<versionRange>
+    									[2.5.1,)
+    								</versionRange>
+    								<goals>
+    									<goal>i18n</goal>
+    								</goals>
+    							</pluginExecutionFilter>
+    							<action>
+    								<ignore></ignore>
+    							</action>
+    						</pluginExecution>
+    					</pluginExecutions>
+    				</lifecycleMappingMetadata>
+    			</configuration>
+    		</plugin>
+    	</plugins>
+    </pluginManagement>
   </build>
 
   <name>cacti-scrumtool-webapp-1.0.0</name>
