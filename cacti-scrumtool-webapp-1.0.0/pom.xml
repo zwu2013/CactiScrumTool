@@ -51,6 +51,11 @@
       <classifier>sources</classifier>
       <scope>test</scope>
     </dependency>
+    <dependency>
+	  <groupId>org.apache.ibatis</groupId>
+	  <artifactId>ibatis-sqlmap</artifactId>
+	  <version>2.3.4.726</version>
+	</dependency>
   </dependencies>
 
   <build>
