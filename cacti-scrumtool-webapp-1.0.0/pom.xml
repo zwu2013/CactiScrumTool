@@ -69,6 +69,12 @@
       <artifactId>spring-webmvc</artifactId>
       <version>${version.spring}</version>
     </dependency>
+    <!--  smart gwt client for front end/UI -->  
+    <dependency>  
+      <groupId>com.smartgwt</groupId>  
+      <artifactId>smartgwt</artifactId>  
+      <version>2.4</version>  
+    </dependency>
   </dependencies>
   <build>
     <!-- Generate compiled stuff in the folder used for developing mode -->
