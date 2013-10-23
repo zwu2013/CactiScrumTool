@@ -1,12 +1,12 @@
 package org.cacti.scrumtool.client.controllers;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.fail;
 
-import org.junit.Test;
+import org.junit.Ignore;
 
 public class SprintControllerTest {
 
-	@Test
+	@Ignore
 	public void test() {
 		fail("Not yet implemented");
 	}
